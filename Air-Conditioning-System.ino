@@ -90,16 +90,16 @@ void setup()
    tlist.number_of_tasks = 0;
    if (add_task(2000,0, greenLEDcheck ))                //greenLEDcheck for checking the blinking of green led at every 2s to know the system is working
    {
-      Serial.println("Task 1 added ");
+      Serial.println("Task 1 added succesfully");
    }
    if (add_task(500, 0, temperatureSensorCheck))         // temperatureSensorCheck gives the ambient temperature at every 0.5s
    {
-      Serial.println("Task 2 added ");
+      Serial.println("Task 2 added succesfully ");
    }
    
    if (add_task(100,0, update_checkButtonsanddisplay))  //update_checkButtonsanddisplay will update the ambient temperature, current maximum and minimum temperature in seven segment
    {
-      Serial.println("Task 3 added");
+      Serial.println("Task 3 added succesfully");
    }
 
 
